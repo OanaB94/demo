@@ -51,9 +51,9 @@ public class TeacherValidator {
         if (teacherDTO.getDateOfBirth().after(currentDate)) {
             throw new InvalidInputException("dateOfBirth cannot be after the current date");
         }
-        if (teacherDTO.getDateOfEmployment().before(currentDate) ) {
-            throw new InvalidInputException("dateOfEmployment may be today or in the future");
-        }
+//        if (teacherDTO.getDateOfEmployment().before(currentDate) ) {
+//            throw new InvalidInputException("dateOfEmployment may be today or in the future");
+//        }
         return true;
     }
 
